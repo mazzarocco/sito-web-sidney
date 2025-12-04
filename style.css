@@ -112,7 +112,10 @@ h6 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/sydney_skyline.jpg') center/cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 600px;
     display: flex;
     align-items: center;
@@ -339,6 +342,17 @@ footer {
 
     .section-title {
         font-size: 1.5rem;
+    }
+}
+
+/* Ensure anchor links aren't hidden by sticky navbar */
+section {
+    scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 60px;
     }
 }
 
